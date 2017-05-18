@@ -29,12 +29,15 @@ def process(file_path, new_screen_name):
         new_data['layout']['landscape'] = new_data['layout']['portrait']
 
 
+    # nocomp and onlycomp split, TODO portrait as well
     if '-nocomp' in sys.argv:
         new_data['layout']['landscape'] = [i for i in new_data['layout']['landscape'] if 'org.xcontest.XCTrack.navig.TaskCompetition' not in i['navigations']]
 
     if '-onlycomp' in sys.argv:
         new_data['layout']['landscape'] = [i for i in new_data['layout']['landscape'] if 'org.xcontest.XCTrack.navig.TaskCompetition' in i['navigations']]
 
+
+    # portrait and landscape modes
     if '-por' in sys.argv:
         del new_data['layout']['landscape']
         new_data['preferences']['Display.Orientation'] = 'PORTRAIT'
@@ -67,3 +70,7 @@ if len(sys.argv) < 3:
     sys.exit('Usage: process.py original_file.cfg new_screen_name [options]')
 
 process(sys.argv[1], sys.argv[2])
+
+
+
+# X1, X2-less compare: .*"(X|Y)(1|2)".*
