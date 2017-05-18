@@ -28,6 +28,13 @@ def process(file_path, new_screen_name):
     if '-lan2por' in sys.argv:
         new_data['layout']['landscape'] = new_data['layout']['portrait']
 
+
+    if '-nocomp' in sys.argv:
+        new_data['layout']['landscape'] = [i for i in new_data['layout']['landscape'] if 'org.xcontest.XCTrack.navig.TaskCompetition' not in i['navigations']]
+
+    if '-onlycomp' in sys.argv:
+        new_data['layout']['landscape'] = [i for i in new_data['layout']['landscape'] if 'org.xcontest.XCTrack.navig.TaskCompetition' in i['navigations']]
+
     if '-por' in sys.argv:
         del new_data['layout']['landscape']
         new_data['preferences']['Display.Orientation'] = 'PORTRAIT'
@@ -38,6 +45,7 @@ def process(file_path, new_screen_name):
 
     else:
         sys.exit('Please specify either -por (portrait) or -lan (landscape)')
+
 
     sort_widgets_by_name(new_data['layout'])
 
