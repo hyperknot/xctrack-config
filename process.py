@@ -30,21 +30,27 @@ def process(file_path, new_screen_name):
         new_data['layout']['landscape'] = new_data['layout']['portrait']
 
 
-    # nocomp and onlycomp split, TODO portrait as well
-    if '-nocomp' in sys.argv:
-        new_data['layout']['landscape'] = [i for i in new_data['layout']['landscape'] if 'org.xcontest.XCTrack.navig.TaskCompetition' not in i['navigations']]
+    # nocomp and onlycomp split
+    for orient in ['portrait', 'landscape']:
+        if orient not in new_data['layout']:
+            continue
 
-    if '-onlycomp' in sys.argv:
-        new_data['layout']['landscape'] = [i for i in new_data['layout']['landscape'] if 'org.xcontest.XCTrack.navig.TaskCompetition' in i['navigations']]
+        if '-nocomp' in sys.argv:
+            new_data['layout'][orient] = [i for i in new_data['layout'][orient] if 'org.xcontest.XCTrack.navig.TaskCompetition' not in i['navigations']]
+
+        if '-onlycomp' in sys.argv:
+            new_data['layout'][orient] = [i for i in new_data['layout'][orient] if 'org.xcontest.XCTrack.navig.TaskCompetition' in i['navigations']]
 
 
     # portrait and landscape modes
     if '-por' in sys.argv:
-        del new_data['layout']['landscape']
+        if 'landscape' in new_data['layout']:
+            del new_data['layout']['landscape']
         new_data['preferences']['Display.Orientation'] = 'PORTRAIT'
 
     elif '-lan' in sys.argv:
-        del new_data['layout']['portrait']
+        if 'portrait' in new_data['layout']:
+            del new_data['layout']['portrait']
         new_data['preferences']['Display.Orientation'] = 'LANDSCAPE'
 
     else:
