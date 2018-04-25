@@ -1,8 +1,16 @@
 # hyperknot's XCTrack Config
 
-This is my constantly updated XCTrack configuration files.
+My up-to-date XCTrack configuration files.
 
-![QR](qr.png)
+![QR](images/qr.png)
+
+## How to import them.
+
+1. Go to **Preferences / Testing & Debug**
+2. Click **Export configuration**, just to create the directory
+3. Download the chosen file into the **XCTrack/Config** folder
+4. Click **Import configuration**
+
 
 
 
@@ -11,6 +19,10 @@ This is my constantly updated XCTrack configuration files.
 Optimised for a Nexus 7 2013 tablet, in landscape mode. 
 
 [Download](https://cdn.rawgit.com/hyperknot/xctrack-config/60d8dd53/screens/hyperknot-landscape.cfg)
+
+#### Competition mode
+
+![landscape-comp](images/landscape-comp.jpg)
 
 
 
