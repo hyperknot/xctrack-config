@@ -2,8 +2,6 @@
 
 My up-to-date XCTrack configuration files.
 
-![QR](images/qr.png)
-
 ## How to import them.
 
 1. Go to **Preferences / Testing & Debug**
@@ -34,3 +32,8 @@ Optimised for a small screen Moto G phone, in portrait mode.
 
 
 
+
+
+## QR code to this URL
+
+![QR](images/qr.png)
