@@ -2,9 +2,7 @@
 
 This is my constantly updated XCTrack configuration files.
 
-Image to this page
-
-
+![QR](qr.png)
 
 
 
