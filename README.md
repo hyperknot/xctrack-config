@@ -16,7 +16,11 @@ My up-to-date XCTrack configuration files.
 
 Optimised for a Nexus 7 2013 tablet, in landscape mode. 
 
-[Download](https://cdn.rawgit.com/hyperknot/xctrack-config/60d8dd53/screens/hyperknot-landscape.cfg)
+[Download](https://rawgit.com/hyperknot/xctrack-config/60d8dd53/screens/hyperknot-landscape.cfg)
+
+#### XC mode
+
+![landscape-xc](images/landscape-xc.jpg)
 
 #### Competition mode
 
