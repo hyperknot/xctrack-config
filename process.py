@@ -15,11 +15,12 @@ def process(file_path, new_screen_name):
     new_data = dict()
     new_data['layout'] = data['layout']
     new_data['info'] = {
-        'versionCode': 63,
-        'versionName': '0.6.0',
+        'versionCode': data['info']['versionCode'],
+        'versionName': data['info']['versionName'],
     }
     new_data['preferences'] = {
         'Display.Theme': 'WhiteHCTheme',
+        'EarthModel': 'WGS84',
     }
 
     if '-por2lan' in sys.argv:
