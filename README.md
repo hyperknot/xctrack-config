@@ -14,7 +14,7 @@ My up-to-date XCTrack configuration files.
 
 ## Landscape
 
-Optimised for tablets in landscape mode. 
+Optimised for tablets in landscape mode.
 
 [Download](https://gitcdn.link/repo/hyperknot/xctrack-config/master/screens/hyperknot-landscape.xcfg)
 
@@ -30,7 +30,7 @@ Optimised for tablets in landscape mode.
 
 ## Portrait
 
-Optimised for a phones in portrait mode. 
+Optimised for a phones in portrait mode.
 
 [Download](https://gitcdn.link/repo/hyperknot/xctrack-config/master/screens/hyperknot-portrait.xcfg)
 
@@ -38,4 +38,4 @@ Optimised for a phones in portrait mode.
 
 ## QR code to this URL
 
-![QR](images/qr.png)
+![QR](images/qr2.png)
