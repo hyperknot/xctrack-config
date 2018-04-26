@@ -1,4 +1,4 @@
 *.pyc
 /*.cfg
 /*.xcfg
-screens/compare*.cfg
+screens/*compare*.cfg
