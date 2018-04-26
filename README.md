@@ -16,7 +16,7 @@ My up-to-date XCTrack configuration files.
 
 Optimised for a Nexus 7 2013 tablet, in landscape mode. 
 
-[Download](https://gitcdn.link/repo/hyperknot/xctrack-config/master/screens/hyperknot-landscape.cfg)
+[Download](https://gitcdn.link/repo/hyperknot/xctrack-config/master/screens/hyperknot-landscape.xcfg)
 
 #### XC mode
 
@@ -32,7 +32,7 @@ Optimised for a Nexus 7 2013 tablet, in landscape mode.
 
 Optimised for a small screen Moto G phone, in portrait mode. 
 
-[Download](https://gitcdn.link/repo/hyperknot/xctrack-config/master/screens/hyperknot-portrait.cfg)
+[Download](https://gitcdn.link/repo/hyperknot/xctrack-config/master/screens/hyperknot-portrait.xcfg)
 
 
 

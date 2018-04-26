@@ -60,7 +60,7 @@ def process(file_path, new_screen_name):
     sort_widgets_by_name(new_data['layout'])
 
     ensure_dir('screens')
-    target_file = os.path.join('screens', new_screen_name + '.cfg')
+    target_file = os.path.join('screens', new_screen_name + '.xcfg')
     write_json(target_file, new_data)
 
 
@@ -74,7 +74,7 @@ def sort_widgets_by_name(layout):
 
 
 if len(sys.argv) < 3:
-    sys.exit('Usage: process.py original_file.cfg new_screen_name [options]')
+    sys.exit('Usage: process.py original_file.xcfg new_screen_name [options]')
 
 process(sys.argv[1], sys.argv[2])
 
