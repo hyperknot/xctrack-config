@@ -1,7 +1,7 @@
 {
   "info": {
-    "versionCode": 70022,
-    "versionName": "0.7.0.4-beta1"
+    "versionCode": 80202,
+    "versionName": "0.8.2-beta"
   },
   "layout": {
     "landscape": [
@@ -172,6 +172,8 @@
             "nav_showWind": true,
             "nav_target": "NONE",
             "nav_use_brackets": true,
+            "postponedDisplayDistance": 300,
+            "postponedFloorLimit": 5000,
             "rotation": {
               "showCompass": false,
               "value": "HEADING_AT_TOP"
@@ -262,6 +264,8 @@
             "nav_showWind": false,
             "nav_target": "NONE",
             "nav_use_brackets": true,
+            "postponedDisplayDistance": 300,
+            "postponedFloorLimit": 5000,
             "rotation": {
               "showCompass": false,
               "value": "NORTH_AT_TOP"
@@ -350,16 +354,16 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WBaroAltitude",
             "UUID": "3d3f7593-f6cd-4b54-b7e0-1dc7a3e9f763",
-            "X1": 8600,
+            "X1": 8800,
             "X2": 10000,
-            "Y1": 8571,
-            "Y2": 8929,
+            "Y1": 1071,
+            "Y2": 2143,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
             "_qnh": {
-              "_manualqnh": 101900.0,
-              "_qnhmode": "AUTO"
+              "_manualqnh": 101700.0,
+              "_qnhmode": "MANUAL"
             },
             "_title": false,
             "_unit": true,
@@ -368,10 +372,10 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompAltitudeOverGoal",
             "UUID": "d362dd98-e0cf-4eb1-8fd5-11aed586a35b",
-            "X1": 7600,
-            "X2": 8400,
-            "Y1": 8929,
-            "Y2": 10000,
+            "X1": 7800,
+            "X2": 8800,
+            "Y1": 1071,
+            "Y2": 2143,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
@@ -382,9 +386,9 @@
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompGlideToGoal",
             "UUID": "a8874cb4-d062-4378-8e9e-b16826d4277b",
             "X1": 6800,
-            "X2": 7600,
-            "Y1": 8929,
-            "Y2": 10000,
+            "X2": 7800,
+            "Y1": 1071,
+            "Y2": 2143,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
@@ -418,6 +422,8 @@
             "nav_showWind": false,
             "nav_target": "NONE",
             "nav_use_brackets": true,
+            "postponedDisplayDistance": 300,
+            "postponedFloorLimit": 5000,
             "rotation": {
               "showCompass": false,
               "value": "NORTH_AT_TOP"
@@ -425,13 +431,13 @@
             "thermals": 0,
             "wpt_showCities": false,
             "wpt_showTakeoffs": false,
-            "wpt_showWaypoints": true
+            "wpt_showWaypoints": false
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompTimeAtStart",
             "UUID": "28546ffc-7157-4c6e-8142-333c9a91538b",
-            "X1": 4600,
-            "X2": 6800,
+            "X1": 3000,
+            "X2": 5200,
             "Y1": 0,
             "Y2": 1786,
             "_bg": 100,
@@ -463,10 +469,10 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompass",
             "UUID": "8200b151-666f-4bef-be9b-2fbe52526622",
-            "X1": 1400,
-            "X2": 2200,
-            "Y1": 8214,
-            "Y2": 9643,
+            "X1": 5800,
+            "X2": 6800,
+            "Y1": 0,
+            "Y2": 1786,
             "_bg": 100,
             "_border": false,
             "navigation_target": "NONE",
@@ -487,28 +493,17 @@
             "_hide_labels": false,
             "_title": false,
             "_unit": false,
-            "avg": 30000,
+            "avg": 10000,
             "headless": false,
             "showVario": false
           },
           {
-            "CLASS": "org.xcontest.XCTrack.widget.w.WNextTurnpoint",
-            "UUID": "468bdf0c-3b2f-406c-8b7a-d47f60b85f02",
-            "X1": 8400,
-            "X2": 10000,
-            "Y1": 0,
-            "Y2": 1071,
-            "_bg": 100,
-            "_border": false,
-            "_title": false
-          },
-          {
             "CLASS": "org.xcontest.XCTrack.widget.w.WNextTurnpointAlt",
             "UUID": "5a52bc91-55d2-48af-b789-dcea02411a0c",
-            "X1": 7800,
+            "X1": 8000,
             "X2": 9000,
-            "Y1": 1071,
-            "Y2": 2143,
+            "Y1": 0,
+            "Y2": 1071,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
@@ -523,10 +518,10 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WNextTurnpointAlt",
             "UUID": "1b75d073-d825-4593-b03d-f5d39bdb4292",
-            "X1": 8800,
+            "X1": 9000,
             "X2": 10000,
-            "Y1": 1071,
-            "Y2": 2143,
+            "Y1": 0,
+            "Y2": 1071,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
@@ -542,7 +537,7 @@
             "CLASS": "org.xcontest.XCTrack.widget.w.WNextTurnpointDistance",
             "UUID": "ca704967-4e0e-44dd-b13e-276ec8f9ee3c",
             "X1": 6800,
-            "X2": 8400,
+            "X2": 8000,
             "Y1": 0,
             "Y2": 1071,
             "_bg": 100,
@@ -550,23 +545,6 @@
             "_hide_labels": false,
             "_title": false,
             "_unit": true,
-            "navigation_target": "OPTIMIZED",
-            "use_brackets": false
-          },
-          {
-            "CLASS": "org.xcontest.XCTrack.widget.w.WNextTurnpointGlideTo",
-            "UUID": "31d7c2f5-3d29-4d0c-8707-62d51a14bee2",
-            "X1": 6800,
-            "X2": 7800,
-            "Y1": 1071,
-            "Y2": 2143,
-            "_bg": 100,
-            "_border": false,
-            "_hide_labels": false,
-            "_title": false,
-            "_unit": false,
-            "alt_above": 0,
-            "headless": false,
             "navigation_target": "OPTIMIZED",
             "use_brackets": false
           },
@@ -604,9 +582,9 @@
             "Y2": 8929,
             "_bg": 100,
             "_border": false,
-            "drawCircle": true,
+            "drawCircle": false,
             "drawScale": false,
-            "includeWindAlgorithm": "ALGO_CLASSIC",
+            "includeWindAlgorithm": "ALGO_NONE",
             "interval": 300,
             "line_thickness": 20,
             "mapScale": {
@@ -617,12 +595,14 @@
             "nav_showSun": false,
             "nav_showWind": true,
             "nav_target": "NONE",
-            "nav_use_brackets": true,
+            "nav_use_brackets": false,
+            "postponedDisplayDistance": 300,
+            "postponedFloorLimit": 5000,
             "rotation": {
               "showCompass": false,
               "value": "HEADING_AT_TOP"
             },
-            "thermals": 2
+            "thermals": 0
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WTime",
@@ -667,10 +647,10 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WWindSpeed",
             "UUID": "38913558-b05d-4064-a7dc-d86ef0ac67e3",
-            "X1": 1400,
-            "X2": 2200,
-            "Y1": 8571,
-            "Y2": 9286,
+            "X1": 5800,
+            "X2": 6800,
+            "Y1": 357,
+            "Y2": 1429,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
