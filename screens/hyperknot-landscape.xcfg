@@ -1,7 +1,7 @@
 {
   "info": {
-    "versionCode": 80202,
-    "versionName": "0.8.2-beta"
+    "versionCode": 90442,
+    "versionName": "0.9.4.4-beta"
   },
   "layout": {
     "landscape": [
@@ -70,15 +70,16 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompass",
             "UUID": "32b631e0-ca22-4d13-b608-69121651e4e2",
-            "X1": 1400,
-            "X2": 2200,
-            "Y1": 8214,
-            "Y2": 9643,
+            "X1": 5800,
+            "X2": 6800,
+            "Y1": 0,
+            "Y2": 1786,
             "_bg": 100,
             "_border": false,
             "navigation_target": "NONE",
             "rotation": "NORTH",
             "showBackground": false,
+            "showBearing": false,
             "showHeading": false,
             "showWind": true
           },
@@ -94,7 +95,7 @@
             "_hide_labels": false,
             "_title": false,
             "_unit": false,
-            "avg": 30000,
+            "avg": 20000,
             "headless": false,
             "showVario": false
           },
@@ -160,6 +161,7 @@
             "_border": false,
             "drawCircle": true,
             "drawScale": false,
+            "fontSize": "SMALL",
             "includeWindAlgorithm": "ALGO_CLASSIC",
             "interval": 300,
             "line_thickness": 20,
@@ -223,10 +225,10 @@
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WWindSpeed",
             "UUID": "b06a2103-9f2a-490b-9bae-59d2bd1a9a44",
-            "X1": 1400,
-            "X2": 2200,
-            "Y1": 8571,
-            "Y2": 9286,
+            "X1": 5800,
+            "X2": 6800,
+            "Y1": 357,
+            "Y2": 1429,
             "_bg": 100,
             "_border": false,
             "_hide_labels": false,
@@ -245,7 +247,8 @@
             "closingCircle": true,
             "faiAreas": true,
             "faiAreasMinMax": true,
-            "legDistance": false,
+            "fontSize": "SMALL",
+            "legDistance": true,
             "legPercentage": false,
             "line_thickness": 20,
             "live_ShowFinalGlide": true,
@@ -362,10 +365,10 @@
             "_border": false,
             "_hide_labels": false,
             "_qnh": {
-              "_manualqnh": 101700.0,
+              "_manualqnh": 101707.8,
               "_qnhmode": "MANUAL"
             },
-            "_title": false,
+            "_title": true,
             "_unit": true,
             "_units": "METER"
           },
@@ -405,6 +408,7 @@
             "Y2": 10000,
             "_bg": 100,
             "_border": false,
+            "fontSize": "SMALL",
             "line_thickness": 20,
             "live_ShowFinalGlide": true,
             "live_ShowFinalGlideAvg": 60000,
@@ -431,7 +435,7 @@
             "thermals": 0,
             "wpt_showCities": false,
             "wpt_showTakeoffs": false,
-            "wpt_showWaypoints": false
+            "wpt_showWaypoints": true
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompTimeAtStart",
@@ -463,6 +467,7 @@
             "navigation_target": "OPTIMIZED",
             "rotation": "HEADING",
             "showBackground": false,
+            "showBearing": false,
             "showHeading": false,
             "showWind": false
           },
@@ -478,6 +483,7 @@
             "navigation_target": "NONE",
             "rotation": "NORTH",
             "showBackground": false,
+            "showBearing": false,
             "showHeading": false,
             "showWind": true
           },
@@ -493,7 +499,7 @@
             "_hide_labels": false,
             "_title": false,
             "_unit": false,
-            "avg": 10000,
+            "avg": 20000,
             "headless": false,
             "showVario": false
           },
@@ -510,9 +516,9 @@
             "_title": false,
             "_unit": true,
             "altitude": "AMSL",
+            "glide": "COMPUTED",
             "navigation_target": "OPTIMIZED",
             "speed_avg": 60000,
-            "speed_type": "GROUND",
             "use_brackets": false
           },
           {
@@ -528,9 +534,9 @@
             "_title": false,
             "_unit": true,
             "altitude": "AGL",
+            "glide": "COMPUTED",
             "navigation_target": "OPTIMIZED",
             "speed_avg": 60000,
-            "speed_type": "GROUND",
             "use_brackets": false
           },
           {
@@ -547,6 +553,19 @@
             "_unit": true,
             "navigation_target": "OPTIMIZED",
             "use_brackets": false
+          },
+          {
+            "CLASS": "org.xcontest.XCTrack.widget.w.WSideView",
+            "UUID": "3e01c8be-f367-439e-a9d8-d388b90688d9",
+            "X1": 6800,
+            "X2": 10000,
+            "Y1": 2143,
+            "Y2": 3929,
+            "_bg": 100,
+            "_border": false,
+            "distance": 10000,
+            "finalGlideAvg": 20000,
+            "type": "SIDE_NAVIG"
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WSpeed",
@@ -578,13 +597,14 @@
             "UUID": "f7fc51f7-85ef-4653-9d3c-74b8feec28bd",
             "X1": 6800,
             "X2": 10000,
-            "Y1": 2143,
+            "Y1": 3929,
             "Y2": 8929,
             "_bg": 100,
             "_border": false,
             "drawCircle": false,
             "drawScale": false,
-            "includeWindAlgorithm": "ALGO_NONE",
+            "fontSize": "SMALL",
+            "includeWindAlgorithm": "ALGO_PARTICLE_DRIFT",
             "interval": 300,
             "line_thickness": 20,
             "mapScale": {
@@ -602,7 +622,7 @@
               "showCompass": false,
               "value": "HEADING_AT_TOP"
             },
-            "thermals": 0
+            "thermals": 1
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WTime",
