@@ -2,11 +2,11 @@
 
 rm -f screens/compare*
 
-MODE=por
-MODENAME=portrait
+# MODE=por
+# MODENAME=portrait
 
-# MODE=lan
-# MODENAME=landscape
+MODE=lan
+MODENAME=landscape
 
 
 cp screens/hyperknot-$MODENAME.xcfg screens/compare.xcfg
