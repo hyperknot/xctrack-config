@@ -306,7 +306,7 @@
             "nav_target": "NONE",
             "nav_use_brackets": true,
             "postponedDisplayDistance": 600,
-            "postponedFloorLimit": 5000,
+            "postponedFloorLimit": 3000,
             "rotation": {
               "showCompass": false,
               "value": "NORTH_AT_TOP"
@@ -550,24 +550,6 @@
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WCompass",
-            "UUID": "a351b4b0-6cc5-4476-8b19-e618f6fd775d",
-            "X1": 1389,
-            "X2": 2500,
-            "Y1": 0,
-            "Y2": 1579,
-            "_bg": 100,
-            "_border": false,
-            "_theme": "",
-            "navigation_target": "OPTIMIZED",
-            "newWindArrow": false,
-            "rotation": "BEARING",
-            "showBackground": false,
-            "showBearing": false,
-            "showHeading": false,
-            "showWind": false
-          },
-          {
-            "CLASS": "org.xcontest.XCTrack.widget.w.WCompass",
             "UUID": "8200b151-666f-4bef-be9b-2fbe52526622",
             "X1": 5556,
             "X2": 6667,
@@ -583,6 +565,24 @@
             "showBearing": false,
             "showHeading": false,
             "showWind": true
+          },
+          {
+            "CLASS": "org.xcontest.XCTrack.widget.w.WCompass",
+            "UUID": "a351b4b0-6cc5-4476-8b19-e618f6fd775d",
+            "X1": 1389,
+            "X2": 2500,
+            "Y1": 0,
+            "Y2": 1579,
+            "_bg": 100,
+            "_border": false,
+            "_theme": "",
+            "navigation_target": "OPTIMIZED",
+            "newWindArrow": false,
+            "rotation": "BEARING",
+            "showBackground": false,
+            "showBearing": false,
+            "showHeading": false,
+            "showWind": false
           },
           {
             "CLASS": "org.xcontest.XCTrack.widget.w.WGlide",
