@@ -1,7 +1,7 @@
 {
   "info": {
-    "versionCode": 90602,
-    "versionName": "0.9.6.1-beta"
+    "versionCode": 90760,
+    "versionName": "0.9.7.6"
   },
   "layout": {
     "landscape": [
@@ -85,6 +85,7 @@
             "_border": false,
             "_theme": "",
             "navigation_target": "NONE",
+            "newWindArrow": false,
             "rotation": "NORTH",
             "showBackground": false,
             "showBearing": false,
@@ -152,6 +153,8 @@
             "_theme": "",
             "_title": false,
             "_unit": true,
+            "_units": "SYS_UNIT",
+            "backwardDetection": false,
             "titletext": ""
           },
           {
@@ -189,6 +192,7 @@
             },
             "mapWidget_heading_arrow_sizecoef": 100,
             "mapWidget_showAirspaces": false,
+            "nav_line": false,
             "nav_showSun": false,
             "nav_showWind": true,
             "nav_target": "NONE",
@@ -283,6 +287,7 @@
             "live_ShowFinalGlideAvg": 60000,
             "live_ShowNearby": true,
             "live_ShowTracklogs": true,
+            "mapWidget_drawBearing": true,
             "mapWidget_drawScale": true,
             "mapWidget_heading_arrow_sizecoef": 100,
             "mapWidget_pilotEdgeDistance": 20,
@@ -295,11 +300,12 @@
             "mapWidget_showOpenStreet": true,
             "mapWidget_showRainRadar": true,
             "mapWidget_showTerrain": true,
+            "nav_line": false,
             "nav_showSun": false,
             "nav_showWind": false,
             "nav_target": "NONE",
             "nav_use_brackets": true,
-            "postponedDisplayDistance": 300,
+            "postponedDisplayDistance": 600,
             "postponedFloorLimit": 5000,
             "rotation": {
               "showCompass": false,
@@ -460,6 +466,7 @@
             "live_ShowFinalGlideAvg": 60000,
             "live_ShowNearby": true,
             "live_ShowTracklogs": true,
+            "mapWidget_drawBearing": true,
             "mapWidget_drawScale": true,
             "mapWidget_heading_arrow_sizecoef": 100,
             "mapWidget_pilotEdgeDistance": 20,
@@ -470,14 +477,15 @@
             },
             "mapWidget_showAirspaces": true,
             "mapWidget_showOpenStreet": true,
-            "mapWidget_showRainRadar": true,
+            "mapWidget_showRainRadar": false,
             "mapWidget_showTerrain": true,
+            "nav_line": false,
             "nav_showSun": false,
             "nav_showWind": false,
             "nav_target": "NONE",
             "nav_use_brackets": true,
-            "postponedDisplayDistance": 300,
-            "postponedFloorLimit": 5000,
+            "postponedDisplayDistance": 600,
+            "postponedFloorLimit": 3000,
             "rotation": {
               "showCompass": false,
               "value": "NORTH_AT_TOP"
@@ -551,6 +559,7 @@
             "_border": false,
             "_theme": "",
             "navigation_target": "OPTIMIZED",
+            "newWindArrow": false,
             "rotation": "BEARING",
             "showBackground": false,
             "showBearing": false,
@@ -568,6 +577,7 @@
             "_border": false,
             "_theme": "",
             "navigation_target": "NONE",
+            "newWindArrow": false,
             "rotation": "NORTH",
             "showBackground": false,
             "showBearing": false,
@@ -662,6 +672,8 @@
             "_theme": "",
             "_title": false,
             "_unit": true,
+            "_units": "SYS_UNIT",
+            "backwardDetection": false,
             "titletext": ""
           },
           {
@@ -699,6 +711,7 @@
             },
             "mapWidget_heading_arrow_sizecoef": 100,
             "mapWidget_showAirspaces": false,
+            "nav_line": false,
             "nav_showSun": false,
             "nav_showWind": true,
             "nav_target": "NONE",
